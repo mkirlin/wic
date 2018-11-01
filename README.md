@@ -1,6 +1,6 @@
 ## README
 
-This is an attempt at knocking out the WIC in a pure Rails fashion
+This is an attempt at knocking out the WIC project in a pure Rails fashion.
 
 ## TODO
 
