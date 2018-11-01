@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 
+  photo_url: 
+  date: 
+  ticket_link: 
+  about: 
+  created_at: 
+  updated_at: 
+  time: 
+  location: 
+  address: 
+  is_private: false
+
+two:
+  title: 
+  photo_url: 
+  date: 
+  ticket_link: 
+  about: 
+  created_at: 
+  updated_at: 
+  time: 
+  location: 
+  address: 
+  is_private: false

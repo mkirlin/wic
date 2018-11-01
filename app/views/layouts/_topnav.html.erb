@@ -1,0 +1,24 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <nav class="col-12 navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="/"><h3>Women In Comedy</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+          </ul>
+          <%= bootstrap_form_tag(url: "/search", layout: :inline) do |f| %>
+            <%= f.search_field :search, hide_label: true, control_class: "form-control mr-sm-2", placeholder: "Search Users" %>
+            <%= f.submit "Search", class: "btn btn-outline-success my-2 my-sm-0" %>
+          <% end %>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Photo url:</strong>
+  <%= @event.photo_url %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p>
+  <strong>Ticket link:</strong>
+  <%= @event.ticket_link %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @event.about %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @event.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @event.updated_at %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @event.time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @event.address %>
+</p>
+
+<p>
+  <strong>Is private:</strong>
+  <%= @event.is_private %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
