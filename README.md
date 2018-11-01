@@ -1,4 +1,6 @@
-# README
+## README
+
+This is an attempt at knocking out the WIC in a pure Rails fashion
 
 ## TODO
 
@@ -24,7 +26,7 @@
   - Render different views for different fields; name match, city match, etc.
 
 ### Non-technical
-- Discuss this with Bryan & Michelle and then maybe Kim
+- Discuss this with TDE folks
 - Explain all this:
   - Ruby version
   - System dependencies
