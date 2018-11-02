@@ -4,6 +4,7 @@ module V1
   # Route methods for Users
   class UsersController < ApplicationController
     before_action :set_user, only: %i[show edit update destroy]
+    before_action :authenticate_user!, only: %i[show new edit create update destroy]
 
     # GET /users
     # GET /users.json
