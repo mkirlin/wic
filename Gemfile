@@ -6,6 +6,9 @@ ruby '2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 4.2'
+
 # Use PostgreSQL as the database for Active Record
 gem 'pg', '~> 1.1.3'
 
@@ -39,13 +42,16 @@ gem 'bootstrap_form', '~> 4.0.0'
 # Dependency for Bootstrap
 gem 'jquery-rails', '~> 4.3.3'
 
-# Use Devise to manage user authentication and authorization
+# Use Devise to manage user authentication
 gem 'devise', '~> 4.5.0'
 gem 'devise_suspendable', '~> 0.6.1'
 gem 'omniauth', '~> 1.8.1'
 
 # Export information as CSV
 gem 'as_csv', '~> 2.0'
+
+# Pundit is used for user authorization in the form of policies
+gem 'pundit', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
