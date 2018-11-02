@@ -3,7 +3,7 @@
 module V1
   # Route methods for Users
   class UsersController < ApplicationController
-    before_action :set_user, only: [:show, :edit, :update, :destroy]
+    before_action :set_user, only: %i[show edit update destroy]
 
     # GET /users
     # GET /users.json
@@ -13,8 +13,7 @@ module V1
 
     # GET /users/1
     # GET /users/1.json
-    def show
-    end
+    def show; end
 
     # GET /users/new
     def new
@@ -22,8 +21,7 @@ module V1
     end
 
     # GET /users/1/edit
-    def edit
-    end
+    def edit; end
 
     # POST /users
     # POST /users.json
