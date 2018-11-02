@@ -5,16 +5,12 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
 ## TODO
 
 ### Technical
-- Build relationships
-  - User-to-user
-  - Event-to-user
-  - User-to-event
 - Build UX interactions around relationships
   - User connections
   - Event creation
   - Event attendence
-- Add icons (FontAwesome?)
-- Build relationship management (ability to block other users)
+  - Block other users
+- Implement FontAwesome icons
 - Format Devise-generated views
 - Implement admin/superadmin permissions (Pundit)
 - Connect image saving and display tools

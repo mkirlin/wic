@@ -44,6 +44,9 @@ gem 'bootstrap_form', '~> 4.0.0'
 # Dependency for Bootstrap
 gem 'jquery-rails', '~> 4.3.3'
 
+# FontAwesome gives us access to a whole universe of icons and animations
+gem 'font-awesome-rails'
+
 # Use Devise to manage user authentication
 gem 'devise', '~> 4.5.0'
 gem 'devise_suspendable', '~> 0.6.1'

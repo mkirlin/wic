@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_02_044837) do
+ActiveRecord::Schema.define(version: 2018_11_02_051150) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "connections", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "connected_user_id"
+    t.index ["connected_user_id"], name: "index_connections_on_connected_user_id"
+    t.index ["user_id"], name: "index_connections_on_user_id"
+  end
 
   create_table "events", force: :cascade do |t|
     t.string "title"
