@@ -5,8 +5,8 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
 ## TODO
 
 ### Technical
+- Build chat
 - Build UX interactions around relationships
-  - User connections
   - Event creation
   - Event attendence
   - Block other users
