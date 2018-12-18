@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.0'
+ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
@@ -59,7 +59,10 @@ gem 'as_csv', '~> 2.0'
 gem 'pundit', '~> 2.0'
 
 # Ransack is used to make searching more flexible and powerful
-gem 'ransack'
+gem 'ransack', '~> 2.1.1'
+
+# AWS S3 is used for file storage in production
+gem "aws-sdk-s3", '~> 1.30.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
