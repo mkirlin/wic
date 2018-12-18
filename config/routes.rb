@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   scope module: 'v1', path: 'v1' do
     resources :users
     resources :events
+    resources :chat_rooms, only: [:new, :create, :show, :index]
   end
 
   scope :admin do

@@ -27,7 +27,9 @@ module V1
     # POST /events
     # POST /events.json
     def create
-      @event = Event.new(event_params)
+      params = event_params
+      params['organizer'] = current_user
+      @event = Event.new(params)
 
       respond_to do |format|
         if @event.save
