@@ -2,7 +2,17 @@
 
 # Route methods for home page and other misc routes
 class BaseController < ApplicationController
-  def index; end
+  def index
+    if current_user
+      @user_created_events = Event.where(organizer: current_user)
+      @user_connections = []
+      @attending_events = []
+      @friends_attending_events = []
+    else
+      # redirect to login page
+      puts "Nahhh, no usahs heah"
+    end
+  end
 
   def search
     search_string = params[:q]

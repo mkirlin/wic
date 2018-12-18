@@ -1,4 +1,9 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 @import "rails_bootstrap_forms";
-@import "partials/*"
+@import "partials/*";
+@import "admin";
+@import "base";
+@import "events";
+// @import "scaffolds";
+@import "users";

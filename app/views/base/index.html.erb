@@ -1,3 +1,20 @@
 <div class="row">
-  <div class="col pane"><%= link_to 'Events', events_path %></div>
+  <div class="col index-section">
+    <h4>My Created Events</h4>
+    <%= render 'created_events_list', events: @user_created_events %>
+  </div>
+  <div class="col index-section">
+    <h4>My Connections</h4>
+    <%= render 'user_connections', users: @user_connections %>
+  </div>
+</div>
+<div class="row">
+  <div class="col index-section">
+    <h4>Events I Am Attending</h4>
+    <%= render 'attending_events_list', events: @attending_events %>
+  </div>
+  <div class="col index-section">
+    <h4>Events My Friends Are Attending</h4>
+    <%= render 'friends_attending_events_list', events: @friends_attending_events %>
+  </div>
 </div>

@@ -13,6 +13,7 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
     - Only let organizers and admins edit events
     - Let users attend events
     - List user's upcoming events on home page
+    - Put datepicker and timepicker in event creation page
   - Users
     - Let users connect with other users
     - Let users contact each other somehow
@@ -26,6 +27,8 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
     - Event pictures
 - Styling
   - Make all tables look nice/potentially remove them
+  - Make all forms look good
+  - Format user profile
   - Put user's attending events, created events, and connections events on the home page
   - Implement FontAwesome icons
   - Format Devise-generated views (implement new registration and login background image, because it is cool)
