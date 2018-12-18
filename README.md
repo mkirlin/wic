@@ -2,6 +2,9 @@
 
 This is an attempt at knocking out the WIC project in a pure Rails fashion.
 
+## Local Development
+- Run `docker-compose up` in the main directory, go to `http://localhost:9000`
+
 ## TODO
 
 ### Code
@@ -11,6 +14,7 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
   - Set up AWS S3 for image storage, add info to encrypted secrets file
   - Add `RAILS_MASTER_KEY` env var to Heroku application
   - Update entrypoint script to allow for runnin in prod & dev environments
+  - Improve local development environment (rerun is slow)(optional)
 - Features
   - Events
     - Only let organizers and admins edit events
