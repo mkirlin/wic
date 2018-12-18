@@ -9,8 +9,7 @@ class BaseController < ApplicationController
       @attending_events = []
       @friends_attending_events = []
     else
-      # redirect to login page
-      puts "Nahhh, no usahs heah"
+      redirect_to new_user_session_path
     end
   end
 

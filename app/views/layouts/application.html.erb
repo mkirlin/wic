@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <%= render "layouts/topnav" %>
+    <%= render "layouts/topnav" unless @disable_nav %>
     <div class="container-fluid">
       <div class="notice"><%= notice %></div>
       <div class="alert-dismissable"><%= alert %></div>
