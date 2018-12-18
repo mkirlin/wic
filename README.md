@@ -8,6 +8,9 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
 - Infrastructure/Config
   - Implement mailer
   - Deploy to Heroku
+  - Set up AWS S3 for image storage, add info to encrypted secrets file
+  - Add `RAILS_MASTER_KEY` env var to Heroku application
+  - Update entrypoint script to allow for runnin in prod & dev environments
 - Features
   - Events
     - Only let organizers and admins edit events
@@ -22,7 +25,7 @@ This is an attempt at knocking out the WIC project in a pure Rails fashion.
     - Implement admin/superadmin permissions (Pundit)
       - Admins can edit users and events, and ban users
       - Superadmins can do everything admins can do, and they can promote users to admin and admins to superadmin
-  - Image saving and display
+  - Image saving and display ([ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html))
     - Profile pictures
     - Event pictures
 - Styling
